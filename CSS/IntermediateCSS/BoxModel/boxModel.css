@@ -1,0 +1,70 @@
+/* BOX MODEL */
+/* Box Model reference https://www.w3schools.com/css/css_boxmodel.asp */
+
+h1 {
+    /* CONTENT */
+    background-color: green;
+    /* Sets the width and height of the content to 250px */
+    /* width: 250px;
+    height: 250px; */
+
+    /* The length when using a percentage is determined by the length of the parent element (In this it is 20% of the body element. NOTE: Setting the height to a percentage is only useful when the parent element has a fixed height) */
+    width: 20%;
+
+    /* PADDING */
+    /* Creates space between the content and border for an element (Padding is included in a background color or background image) */
+    /* Sets the padding to 14px on all sides (Top, Right, Bottom, Left) */
+    /* padding: 14px; */
+
+    /* Sets the padding above the content to 70px */
+    /* padding-top: 70px; */
+
+    /* Sets the padding for each side individually */
+    /* Top Right Bottom Left */
+    /* padding: 30px 15px 23px 70px; */
+
+    /* Sets the padding for top/bottom and left/right with two values/positions */
+    /* Top/Bottom Left/Right */
+    /* padding: 70px 10px; */
+
+    /* Removes all padding on an element (If there is any). Unit of measurement is NOT needed when setting the value to zero. */
+    /* padding: 0; */
+
+    /* BORDER */
+    border: 5px solid blue;
+
+    /* MARGIN */
+    /* Creates space between other elements and/or the edge of the window/viewport */
+    /* Removes all margin on an element (If there is any). */
+    /* margin: 0; */
+
+    /* Margin works the same as padding in regards to setting each/all sides (Top, Right, Bottom, Left) */
+    /* margin: 90px; */
+
+    /* Setting the left/right value for margin to "auto" will center an element horizontally within the parent element by evenly distributing the margin on each side (Left and Right) */
+    /* margin: 90px auto; */
+
+    /* margin: auto; is the same as margin: 0 auto; */
+    /* margin: auto; */
+    
+    /* Border Box */
+    /* Setting the "box-sizing: border-box;" style includes the padding and border in an element's width and height. (NOTE: Content-box is the default value for box sizing) */
+    /* box-sizing: border-box;
+    width: 250px;
+    height: 250px;
+    padding: 50px; */
+    /* border: 50px solid blue; */
+
+    /* The Display Property */
+    /* The Display property can be used to change elements to Block, Inline, Inline-Block */
+
+    /* The difference between Block and Inline-Block is that a Block element will always start on a new line, but Inline-Block elements can be displayed next to each other on a single line */
+
+    /* The difference between Inline and Inline-Block is that unlike Inline, Inline Block allows a width and height to be set on the element. Also, the top and bottom margins/paddings are respected. */
+    
+    display: inline;
+    /* display: block; */
+    /* display: inline-block;  */
+
+    margin: -4px;
+}

@@ -1,0 +1,127 @@
+/* FLEXBOX */
+/* Flexbox allows for a flexible and responsive layout to be created without having to use float or position */
+
+#main {
+    background-color: #999;
+    height: 575px;
+}
+
+div div {
+    width: 150px;
+    border: 3px solid black;
+    font-size: 30px;
+    margin: 10px;
+}
+
+#red {
+    background-color: red;
+    height: 225px;
+}
+
+#green {
+    background-color: forestgreen;
+    height: 150px;
+}
+
+#blue {
+    background-color: rgb(16, 16, 119);
+    height: 75px;
+}
+
+#main {
+    /* display: flex; creates a Flexbox container (NOTE: When display: flex; is applied to an element the child elements become flexbox items and will display in a row by default). */
+    display: flex;
+
+    /* Justify Content */
+    /* Justify Content will determine how the elements are set along the main axis (Horizontal axis in this case, because the main axis starts off as the horizontal axis by default) */
+    /* flex-start is the default justify-content value */
+    /* justify-content: flex-start; */
+    /* flex-end positions the flexbox items at the end of the main axis (All the way to the right in this case) */
+    /* justify-content: flex-end; */
+    /* center positions the flexbox items in the middle/center of the main axis (horizontal axis in this case) */
+    /* justify-content: center; */
+    /* space-between positions the flexbox items with even distribution of space between items */
+    /* justify-content: space-between; */
+    /* space-around positions the flexbox items with even distribution of left and right margin on each one */
+    /* justify-content: space-around; */
+    /* space-evenly positions the flexbox items with even distribution of space between them. Also, the space between the items will match the space before the first item and the space after the last item. */
+    /* justify-content: space-evenly; */
+
+    /* Align Items */
+    /* Align items will determine how the items/elements are set along the cross axis (Vertical or Y-Axis in this case, because the cross axis starts off as the vertical axis by default)  */
+    /* Stretch is the default value for align-items (NOTE: If an element has a min-height value on it, then it will stretch to fill the vertical or horizontal space) */
+    /* align-items: stretch; */
+    /* Center will center the items along the cross (Vertical axis in this case) */
+    /* align-items: center; */
+    /* flex-end positions the items at the end of the cross axis (All the way to the bottom in this case) */
+    /* align-items: flex-end; */
+    /* flex-start positions the items at the start of the cross axis (All the way to the top in this case). NOTE: If there is not a min-height set, then this style will no effect on the elements in this case. */
+    /* align-items: flex-start; */
+
+    /* Flex Wrap */
+    /* Flex Wrap wraps items that cannot fit on the current line/row (NOTE: If flex-wrap: wrap is NOT set/applied, then the items will shrink when screen is too small to display them at their full size) */
+    /* flex-wrap: wrap; */
+
+    /* Align Content */
+    /* Align Content is used like align-items for when items wrap onto another line/row */
+    /* align-content: center; */
+    /* align-content: flex-end; */
+    /* align-content: flex-start; */
+
+    /* Flex Direction */
+    /* Flex Direction sets the flex items in a row or a column (the default is a row) */
+    /* flex-direction: column positions the items in a column instead of a row (NOTE: Also changes the main axis to the vertical axis and the cross axis to the horizontal axis) */
+    /* flex-direction: column; */
+    /* With flex-direction set to column, align-items will now determine where the items are displayed along the horizontal axis */
+    /* align-items: center; */
+    /* With flex-direction set to column, justify-content will now determine where the items are displayed along the vertical axis */
+    /* justify-content: flex-end; */
+
+    /* Flex direction can also be used to reverse the order of the items. It does this by flipped the side of the container the items start from. */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+}
+
+#red {
+    /* Flex Grow */
+    /* Flex grow determines if a flexbox item will grow and how much it will grow in the available space. 0 is the default value */
+    /* flex-grow: 0; */
+    /* flex-grow: 1; */
+
+    /* Flex Shrink */
+    /* Flex shrink determines if a flexbox item will shrink and how much it will shrink. 1 is the default value */
+    /* flex-shrink: 1; */
+    /* Item will NOT shrink when flex shrink is set to 0 */
+    /* flex-shrink: 0; */
+
+    /* Flex Basis */
+    /* Flex Basis determines where the flex grow/shrink properties start from. Default is auto, which sets the length/width of the flexbox item to its predetermined length. Flex basis is usually set with a length in pixels */
+    /* flex-basis: 400px; */
+    /* flex-grow: 2; */
+    /* flex-shrink: 1; */
+
+    /* Flex Shorthand Property */
+    /* Example: flex: Flex-grow flex-shrink flex-basis; */
+    /* Default values are flex: 0 1 auto; */
+    flex: 2 1 400px;
+
+    /* Order */
+    /* Order changes the order of the flexbox items in their container */
+    order: 3;
+
+    /* Align Self */
+    /* Align self determines how the individual item displays along the cross axis (Y-Axis/Vertical Axis) */
+    align-self: flex-end;
+}
+
+#green {
+    flex-grow: 3;
+    flex-shrink: 2;
+    order: 2;
+    align-self: center;
+}
+
+#blue {
+    flex-grow: 1;
+    flex-shrink: 0;
+}

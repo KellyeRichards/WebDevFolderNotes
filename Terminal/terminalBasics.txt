@@ -1,0 +1,27 @@
+Commands we will be going over...
+
+--------------------------------------------------------
+mkdir FolderName
+    -(Make Directory) Creates a Folder
+    -NOTE: FOLDER names are in CapitalCase
+
+touch fileName
+    -Creates a file
+    -NOTE: FILE names are in camelCase
+
+cd FolderName 
+    -(Change Directory) this allows you to move down the filepath.
+
+cd .. 
+    -this moves up a level to the parent folder, add additional dots (.) to move up additional levels
+
+ls 
+    -lists files in FolderName
+
+rm fileName
+    -Delete/remove a file (The file you are trying to remove must be inside the folder/directory you are currently in)
+
+rm -r FolderName
+    -Delete/remove a directory/folder (The folder/directory you are trying to remove must be inside the folder/directory you are currently in)
+
+

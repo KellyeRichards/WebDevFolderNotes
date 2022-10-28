@@ -1,0 +1,12 @@
+CSS...
+
+CSS (Cascading Style Sheets) is language used to style an HTML file (AKA A Webpage). CSS describes how HTML elements should be displayed.
+
+1. Styles/Properties
+    A. CSS has many different styles (AKA Properties) that can be applied to HTML elements which can change how an element looks, where it is displayed, and much more
+        i.Examples of CSS Styles: color, border, font, etc.
+2. Selectors
+    A. CSS uses selectors to select an element or multiple elements to add styles to it
+        i. Examples of CSS Selectors: Element, Class, ID, etc.
+3. File Naming
+    A. CSS files end with the ".css" file extension

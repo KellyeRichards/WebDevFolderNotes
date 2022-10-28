@@ -1,0 +1,44 @@
+/* INHERITANCE */
+/* Certain CSS styles can be inherited */
+/* All elements inside the body element/tag inherit the cornflowerblue text color style (Except for the a tags) */
+body {
+    color: cornflowerblue;
+}
+
+/* SPECIFICITY */
+/* The div element is more specific to the h2 elements because the div is inside the body element (Closer to the h2 elements) */
+div {
+    color: plum;
+}
+
+/* h2 is the most specific element selector we can use to style the h2 elements (More specific than the div) */
+h2 {
+    color: orange;
+}
+
+/* The li elements inside the ol tags inherit the green text color (more specific than the body) */
+ol {
+    background-color: lemonchiffon;
+    color: green;
+}
+
+/* The li elements inside the ul tags inherit the properties (more specific than the ol that the ul is nested inside of) */
+ul {
+    background-color: green;
+    color: lemonchiffon;
+}
+
+/* li is the most specific element selector we can use to style the li elements (More specific than the ol OR ul) */
+li {
+    color: darksalmon;
+}
+
+/* Class selector is more specific than an element selector (More specific than the li) */
+.hobbit {
+    color: dimgrey;
+}
+
+/* ID selector is more specific than a class selector (More specific than .hobbit) */
+#armies {
+    color: firebrick;
+}

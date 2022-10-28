@@ -1,0 +1,61 @@
+body {
+    font-size: 50px;
+}
+
+/* Static Positioning */
+/* Static is the default position value */
+.parent {
+    padding: 5px;
+    background-color: chartreuse;
+    width: 70%;
+    height: 2000px;
+
+    position: relative;
+    left: 50px;
+}
+
+.child-one {
+    background-color: rgb(161, 233, 256);
+    /* Relative Position */
+    /* With relative, we can shift elements FROM left, right, bottom, and top from the element's starting position. */
+    /* position: relative; */
+    /* top: 50px; */
+    /* left: 50px; */
+    
+    /* Sticky Position */
+    /* If we set a child to sticky, it will stick to the top when we start scrolling and become fixed. It remains fixed only while inside its parent element.  */
+    /* If the parent is the body element, the child element with sticky will remain at the top for however long you scroll */
+    /* position: sticky; */
+    /* top: 5px; */
+    
+}
+
+.child-two {
+    background-color: silver;
+
+    /* Absolute Position */
+    /* Completely removes the element from the flow of the document. All other elements ignore the one with the absolute property. */
+    /* If we use top, bottom, left, or right, it will arrange the element according to its parent container IF the parent container has a position set other than static. */
+
+    /* position: absolute; */
+    /* top: 15px; */
+
+    /* position: sticky; */
+    /* top: 80px; */
+}
+
+.child-three {
+    background-color: lightpink;
+
+    /* Fixed Position */
+    /* Fixed according to entire HTML document, it won't follow any parent element even if the parent is set to relative. It will also stay in the same position if we scroll. */
+
+    /* position: fixed; */
+    /* right: 100px; */
+}
+
+#grandchild {
+    background-color: palegoldenrod;
+    position: relative;
+    left: 75px;
+}

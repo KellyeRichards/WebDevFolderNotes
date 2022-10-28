@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Link to Bootstrap CSS file (This should always come before the link to a custom created CSS file) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <title>Bootstrap demo</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Austin's Web Design</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Accordion -->
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOOTSTRAP CLASSES -->
+      <!-- The "container" class sets a certain max-width at each of the Bootstrap screen width breakpoints (576px, 768, etc.). Also, sets equal left and right margin. -->
+      <div class="container">
+        <!-- The "display-" class can be used to make headings larger to help them stand out  -->
+        <!-- NOTE: Similar to heading elements (ex: h1) the display class goes from 1 to 6 with 1 being the largest and 6 the smallest (Ex: display-6) -->
+        <h1 class="display-1">Bootstrap Classes</h1>
+
+        <!-- The "lead" class can be used to make text larger to help it stand out -->
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. At iste distinctio ab, excepturi sapiente veniam repellat in esse mollitia perferendis magni sint ex corrupti, vitae aliquid totam nulla! Labore, facilis!</p>
+
+        <!-- Font Size -->
+        <!-- The "fs-" class can be used to change the font size (ex: fs-1). The number goes from 1 to 6 with 1 being the largest and 6 being the smallest (ex: fs-6) -->
+        <p class="fs-1">Font Size</p>
+
+        <!-- The "text-end" class aligns the text to the right -->
+        <!-- The "text-lowercase" changes the text to lowercase -->
+        <p class="text-end text-lowercase">Right</p>
+
+        <!-- The "text-nowrap" class stops the text from wrapping onto another line -->
+        <!-- The "text-capitalize" changes the text to make the first letter of every word capitalized -->
+        <p class="text-nowrap text-capitalize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quibusdam provident, tenetur, blanditiis cupiditate suscipit beatae magnam quaerat voluptatum doloribus placeat asperiores debitis maxime itaque iusto molestiae reprehenderit, natus corporis.</p>
+
+        <!-- Lists -->
+        <!-- The "list-unstyled" class removes the bullet or number on list items -->
+        <ol class="list-unstyled">
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+        </ol>
+
+        <!-- The "list-inline-item" class changes list items to inline elements -->
+        <!-- ul.list-inline>li.list-inline-item*3 -->
+        <ul class="list-inline">
+            <li class="list-inline-item">First</li>
+            <li class="list-inline-item">Second</li>
+            <li class="list-inline-item">Third</li>
+        </ul>
+
+        <!-- COLORS -->
+        <!-- Text Color -->
+        <!-- The "text-" class can be used to set a text color to an element using one of the Bootstrap color keywords (Ex: text-primary) -->
+        <!-- h3.text-primary*9 -->
+        <h3 class="text-primary">Primary</h3>
+        <h3 class="text-secondary">Secondary</h3>
+        <h3 class="text-success">Success</h3>
+        <h3 class="text-info">Info</h3>
+        <h3 class="text-warning">Warning</h3>
+        <h3 class="text-danger">Danger</h3>
+        <h3 class="text-muted">Muted</h3>
+        <h3 class="text-light">Light</h3>
+        <h3 class="text-dark">Dark</h3>
+        
+        <!-- Background Color -->
+        <!-- The "bg-" class can be used to set a background color to an element using one of the Bootstrap color keywords (Ex: bg-primary) -->
+        <h3 class="bg-primary">Primary</h3>
+        <h3 class="bg-secondary">Secondary</h3>
+        <h3 class="bg-success">Success</h3>
+        <h3 class="bg-info">Info</h3>
+        <h3 class="bg-warning">Warning</h3>
+        <h3 class="bg-danger">Danger</h3>
+        <!-- Muted does not have a background color -->
+        <h3 class="bg-muted">Muted</h3>
+        <h3 class="bg-light">Light</h3>
+        <h3 class="bg-dark">Dark</h3>
+
+        <!-- Buttons -->
+        <!-- The "btn" and "btn-" classes are used to style buttons, a (AKA anchor) tags, and submit inputs using one of the Bootstrap color keywords (Ex: btn btn-primary) -->
+        <div class="container">
+          <button class="btn btn-primary">Primary</button>
+          <button class="btn btn-secondary">Secondary</button>
+          <button class="btn btn-success">Success</button>
+          <button class="btn btn-info">Info</button>
+          <button class="btn btn-warning">Warning</button>
+          <button class="btn btn-danger">Danger</button>
+          <button class="btn btn-light">Light</button>
+          <button class="btn btn-dark">Dark</button>
+          <button class="btn btn-link">Link</button>
+
+          <br>
+
+          <!-- Using "btn-outline-" class will change the text color, border color, as well as change the background color when the element is hovered over. Any of the Bootstrap color keywords can be used with the "btn-outline-" class -->
+          <button class="btn btn-primary btn-outline-warning">Primary with Warning Outline</button>
+        </div>
+
+        <!-- Button Sizes -->
+        <!-- The "btn-lg" and "btn-sm" classes are used to change the size of a button, a (AKA anchor) tags, and submit inputs -->
+        <div class="container">
+          <button class="btn btn-primary btn-lg">Large</button>
+          <button class="btn btn-primary">Medium</button>
+          <button class="btn btn-primary btn-sm">Small</button>
+        </div>
+
+        <!-- Padding and Margin -->
+        <div class="container">
+          <!-- Padding -->
+          <!-- The "p-" class sets padding to an element using a number from 0 to 5. 0 sets no padding and 5 sets the largest amount of padding that can be set to an element (Ex: p-5) -->
+          <h1 class="bg-danger p-5">Padding</h1>
+
+          <!-- The "py-" and "px-" classes are used to set top/bottom padding and left/right padding (Ex: px-5) -->
+          <h1 class="bg-info py-3 px-5">Padding Top and Bottom</h1>
+
+          <!-- The "pt-", "pb-", "ps-", and "pe-" classes are used to set top, bottom, left, and right padding respectively (Ex: pt-5) -->
+          <h1 class="bg-success pt-5 pb-1 ps-3 pe-4">Padding Top</h1>
+
+          <!-- Margin -->
+          <!-- The same classes used for padding can be used for margin if an "m" is used in place of the "p". Also, just like padding the numbers go from 0 to 5. -->
+          <h1 class="bg-secondary m-2">Margin</h1>
+          <h1 class="bg-primary my-5">Margin Top and Bottom</h1>
+          <h1 class="bg-warning ms-5">Margin Left</h1>
+        </div>
+
+        <!-- Flexbox -->
+        <!-- The "d-flex" class creates a Flexbox container. The "flex-column" class changes the main axis from the X (Horizontal) axis to the Y(Vertical) axis -->
+        <!-- The "justify-content-" class determines how the flexbox items are displayed along the main axis (Ex: justify-content-between). Other options are start, end, between, evenly, and around -->
+        <!-- The "align-items-" class determines how the flexbox items are displayed along the cross axis (Ex: align-items-center). Other options are start, end, and stretch. -->
+        <div class="container bg-danger d-flex justify-content-center align-items-center">
+          <h1>Hello</h1>
+          <h3>Hi</h3>
+          <h5>Hey</h5>
+        </div>
+
+        <!-- Tables -->
+        <!-- Bootstrap has multiple classes that can be used to style tables. Similar to the "btn" for buttons there is a "table" class that should be used to start when styling a table using Bootstrap -->
+        <div class="container">
+          <table class="table table-striped table-bordered table-hover table-sm table-danger">
+            <thead>
+              <tr>
+                <th>CSS</th>
+                <th>Bootstrap</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="table-primary">Selectors</td>
+                <td>Classes</td>
+              </tr>
+              <tr>
+                <td>Properties</td>
+                <td class="table-success">Components</td>
+              </tr>
+              <tr>
+                <td>Classes</td>
+                <td>Template</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Images -->
+        <div class="container">
+          <!-- The "rounded" class will round the corners of the image -->
+          <img src="boots.jpg" alt="Boots" class="rounded">
+          <hr>
+
+          <!-- The "img-fluid" class will resize an image to display when the container (AKA parent element) that the image is inside of is no longer wide enough to display the image at its full size. -->
+          <img src="boots.jpg" alt="Boots" class="img-fluid">
+
+          <hr>
+
+          <!-- The "img-thumbnail" class will resize an image to display when the container (AKA parent element) that the image is inside of is no longer wide enough to display the image at its full size. Also, adds a rounded border around the image -->
+          <img src="boots.jpg" alt="Boots" class="img-thumbnail">
+        </div>
+      </div>
+
+
+    <!-- Link to Bootstrap JS file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+body {
+    background-color: green;
+}
+
+h1 {
+    text-align: center;
+    color: aqua;
+}
+
+span {
+    border: 5px solid rgb(161, 233, 256);
+    color: white;
+    font-size: 50px;
+    text-align: center;
+
+    /* !display: grid; */
+}
+
+section {
+    /* display: grid will create a Grid container (NOTE: This will not immediately change the way elements are displaying unless they are inline elements) */
+    display: grid;
+
+    /* COLUMNS */
+    /* grid-template-columns sets the amount of columns as well as the width of them */
+    /* grid-template-columns: 150px 150px 150px; */
+    /* Repeat */
+    /* grid-template-columns: repeat(3, 150px); */
+    /* grid-template-columns: 50% 50%; */
+
+    /* Fraction (FR) can be used to create columns and distribute space in a CSS Grid */
+    /* For this example, the middle column takes up twice as much space as the first or last columns */
+    /* grid-template-columns: 1fr 2fr 1fr; */
+
+    /* ROWS */
+    /* grid-auto-rows sets a height for all rows in a CSS Grid */
+    /* grid-auto-rows: 125px; */
+    /* grid-template-rows can be used to set different heights for different rows */
+    /* grid-template-rows: 50px 200px; */
+    /* If we wanted to style rows 1, 2, and 6 */
+    /* grid-template-rows: 50px 200px repeat(3, 125px) 300px; */
+    
+    /* Auto will base height of row on the content inside */
+    /* grid-template-rows: 50px auto; */
+
+    /* GAP */
+    /* gap determines space between columns and rows (row-gap & column-gap can be used to have rows and columns to be a different size) */
+    /* gap: 20px; */
+    /* SHORTHAND gap: row column; */
+    /* gap: 20px 10px; */
+    /* row-gap: 10px; */
+    /* column-gap: 30px; */
+
+    /* Grid Template Areas can be used to map out your grid. The property grid-area has to be given to each grid element */
+
+    grid-template-areas: 
+    "one one two two two"
+    "three four four four four"
+    "five five five six six"
+    ;
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+#three {
+    grid-area: three;
+}
+#four {
+    grid-area: four;
+}
+#five {
+    grid-area: five;
+}
+#six {
+    grid-area: six;
+}
+
+
+
+
+

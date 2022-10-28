@@ -1,0 +1,12 @@
+#bomb {
+    font-size: 300px;
+    color: teal;
+    background-color: darkmagenta;
+    border: 20px solid;
+}
+
+#ninja {
+    font-size: 300px;
+    color: green;
+    background-color: red;
+}

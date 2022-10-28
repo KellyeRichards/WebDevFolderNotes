@@ -1,0 +1,29 @@
+Commands/terms in this lesson: 
+
+1. git status - Displays paths that have differences between the index file and the current HEAD commit, paths that have differences between the working tree and the index file, and paths in the working tree that are not tracked
+
+2. git log - Shows the commit logs
+
+3. Working Tree - All files, folders, etc. that are within your repository on the current branch you are working with
+
+4. Branch - Duplication of an object under version control. Once an object is "branched" it can be worked on separately from the others
+
+5. HEAD - The tip of the branch is referenced by a branch head, which moves forward as additional development is done on the branch. A single Git repository can track an arbitrary number of branches, but your working tree is associated with just one of them (the "current" or "checked out" branch), and HEAD points to that branch.
+
+6. git branch - shows all existing branches
+
+7. git branch -a - shows all existing branches AND remote branches  
+
+8. git branch <branch-name> - creates branch with entered branch name
+
+9. git checkout <branch-name> - switches to entered branch name
+
+10. git checkout -b <branch-name> - creates and switched to entered branch name
+
+11. git switch <branch-name> - (new git syntax specific to branches) switches to entered branch name
+
+12. git switch -c <branch-name> - (new git syntax specific to branches) creates and switched to entered branch name
+
+13. git merge <branch-name> - merges selected branch into current branch
+
+14. git branch --delete <branch-name> - deletes a branch. Note cannot use this if you are currently in the branch you are trying to delete.  

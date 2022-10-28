@@ -1,0 +1,83 @@
+h1 {
+    background-color: #14248a;
+    border: 5px solid #2e86ab;
+    font-size: 50px;
+    color: #c4fff9;
+    margin: 0;
+}
+
+#main {
+    /* Setting the "display: grid" style to an element will turn it into a Grid Container which allows for CSS Grid properties to be used on it. Also, it will make the child elements Grid Items. */
+    display: grid;
+
+    /* COLUMNS */
+    /* grid-template-columns set the width of the grid columns. All types of sizing can be used (Pixels, percentages, etc.) */
+    /* The amount of columns are determined by how many sizes are set (Ex: grid-template-columns: 200px 200px would be two columns) */
+    /* grid-template-columns: 250px 200px 150px; */
+    /* grid-template-columns: 50% 50%; */
+
+    /* Setting columns with repeat() */
+    /* Syntax example: repeat(columns, length) */
+    /* grid-template-columns: repeat(2, 400px) */
+    /* * gtc gives a good emmet abbreviation for this */
+    grid-template-columns: repeat(3, 33%);
+
+    /* Fraction (FR) can be used to create columns and distribute space in a CSS Grid */
+    /* The 2nd column takes up twice as much space as the first. The 3rd column takes up three times as much space as the first. */
+    /* grid-template-columns: 1fr 2fr 3fr; */
+
+    /* ROWS */
+    /* grid-auto-rows sets a height for all rows in a CSS Grid. Also, if grid-template-rows is used, any rows that do not have a specified height will default to the grid-auto-rows value. */
+    grid-auto-rows: 150px;
+    /* grid-auto-rows: auto; */
+    /* grid-template-rows is used to set different heights for different rows (NOTE: first position will determine the first row height, second will determine the second row, etc.) */
+    /* grid-template-rows: 100px 200px; */
+
+    /* GAP */
+    /* grid-gap determines the space between columns and rows */
+    /* * gg (emmet abbrv) */
+    /* grid-gap: 20px; */
+    /* row-gap determines the space between rows */
+    /* * rg (emmet abbrv) */
+    /* row-gap: 10px; */
+    /* column-gap determines the space between columns */
+    /* * cg (emmet abbrv) */
+    /* column-gap: 30px; */
+    
+    /* Shorthand */
+    /* grid-gap: row column */
+    /* grid-gap: 20px 10px; */
+}
+
+/* GRID-COLUMN and GRID-ROW START and END */
+/* grid-column-start and end as well as grid-row-start and end are used to determine how many columns/rows each item will take up */
+/* Examples below are the three 33% columns */
+
+#first {
+    grid-column-start: 1;
+    /* The number/value for the end will end the item before that row or column (Ex: 4 will go up to column or row 4, but will not take up that space). */
+    grid-column-end: 4;
+
+    /* grid-row-start: 1; */
+    /* grid-row-end: 3; */
+}
+
+#second {
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+#third {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+#fourth {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+#fifth {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}

@@ -1,0 +1,94 @@
+/* FONT FAMILY */
+/* The Font Family property/style sets the font for the text */
+/* The fonts that come after the Impact font are there in case the webpage is pulled up in a browser that does not support the Impact font. Also, '' or "" are necessary for fonts with more than one word that are not connected with a hyphen "-" */
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* FONT SIZE */
+/* Using px (pixels) will set the element's text size to a fixed pixel size */
+p {
+    font-size: 25px;
+}
+
+/* em determines the font size based on the size of the parent element (P elements in this case) */
+/* Font size will be 100px (25px x 4) */
+#span-one {
+    font-size: 4em;
+}
+
+/* The 2nd paragraph is only 64px because it is basing the font size off of its parent element (The body element) which is 16px (16px x 4) */
+#p-two {
+    font-size: 4em;
+}
+
+/* Even on an h1 (Largest heading) using em will set the size based off the font size of its parent element (The body element 16px) */
+h1 {
+    /* Can also use decimals */
+    /* font-size: 0.5em; */
+    font-size: 1em;
+}
+
+/* This sets the root font size for all elements in the HTML file (Default root font size is 16px) */
+/* This is used a lot at the start of a CSS file so that em can be used to set the size for different elements in the HTML file */
+/* Notice this does NOT effect the font size in the 1st paragraph because it has a fixed font size. Therefore, it does NOT inherit/base its font size off of the HTML/Body element */
+html {
+    font-size: 10px;
+}
+
+/* rem determines the font based on the font size of the root element in the HTML file (AKA the HTML element) */
+#span-two {
+    font-size: 4rem;
+}
+
+/* FONT WEIGHT */
+/* Font weight determines the boldness of the text */
+p {
+    font-weight: bold;
+    /* Some fonts allow for multiple levels of boldness */
+    /* font-weight: bolder; */
+    /* Font weight can also be set using numbers. Must use multiples of 100. No unit of measurement is needed. */
+    /* font-weight: 500; */
+    /* font-weight: 900; */
+}
+
+/* FONT STYLE */
+/* Determines if text is italic */
+p {
+    font-style: italic;
+}
+
+/* LINE HEIGHT */
+/* Determines spacing between lines of text */
+p {
+    /* No unit of measurement is needed */
+    line-height: 1.5;
+}
+
+/* LETTER SPACING */
+/* Determines the spacing between letters */
+p {
+    letter-spacing: 10px;
+}
+
+/* TEXT ALIGN */
+/* Determines alignment of text */
+h1 {
+    text-align: center;
+    /* text-align: right; */
+}
+
+/* TEXT DECORATION */
+/* Adds a decoration to text */
+span {
+    /* text-decoration: underline; */
+    text-decoration: line-through 15px red dotted;
+}
+
+/* TEXT TRANSFORM */
+/* Determines the casing/capitalization of text */
+h6 {
+    font-size: 50px;
+    text-transform: uppercase;
+}

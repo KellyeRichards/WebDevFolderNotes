@@ -1,0 +1,88 @@
+/* Color Name */
+h1 {
+    color: chartreuse;
+}
+
+/* NOTE: CSS styles can be overridden (The style that comes last in the CSS file will be applied)  */
+h1 {
+    color: blueviolet;
+}
+
+/* Hexadecimal Colors */
+/* A Hexadecimal number/character goes from zero to the letter F */
+/* 0123456789ABCDEF */
+/* # + Six Hexadecimal numbers/characters */
+/* #25E2F6 */
+
+/* First two positions determine the amount of Red */
+/* Second/Middle two positions determine the amount of Green */
+/* Third/last two positions determine the amount of Blue */
+
+/* Hexadecimal Colors work as if they are light, not paints */
+/* #FFFFFF would be white */
+/* #000000 would be black */
+
+/* Examples */
+h1 {
+    /* This is Green */
+    color: #00FF00;
+}
+
+h1 {
+    /* This is Blue */
+    color: #0000FF;
+}
+
+h1 {
+    /* This is Red */
+    color: #FF0000;
+}
+
+/* Shorthand way to write a Hexadecimal color (First two positions must match, second two positions must match, and the third two positions must match) */
+
+h1 {
+    /* color: #000000; */
+    color: #000;
+}
+
+h1 {
+    /* color: #1155CC; */
+    color: #15C;
+}
+
+/* Transparency with Hexadecimal Colors */
+/* An extra two positions (AKA Numbers/Characters) can be used to determine transparency. The lower the numbers/characters, the more transparent the color will be. The higher the numbers/characters, the less transparent the color will be. */
+h1 {
+    /* Fully Transparent (AKA Invisible) */
+    color: #dfdf5500;
+}
+
+h1 {
+    /* NOT transparent (AKA Fully Opaque) */
+    color: #0000FFFF;
+}
+
+/* Shorthand example using the extra position for transparency */
+h1 {
+    color: #00FF;
+}
+
+/* RGB (Red, Green, Blue) */
+/* RGB has three channels/positions */
+/* rgb(#, #, #) */
+/* Each channel/position goes from 0 to 255 */
+/* Example: rgb(132, 47, 102) */
+
+h1 {
+    color: rgb(0, 0, 255);
+}
+
+/* RGBA (Red, Green, Blue, Alpha) */
+/* Alpha determines transparency */
+/* Alpha goes from 0 to 1 */
+/* Example: rgba(226, 250, 1, 0.7) */
+
+h1 {
+    /* Setting the Alpha channel/position to 0 will make it fully transparent (AKA Invisible). Setting the Alpha channel/position to 1 will make it fully opaque (AKA Visible) */
+    color: rgba(0, 250, 1, 0.7);
+}

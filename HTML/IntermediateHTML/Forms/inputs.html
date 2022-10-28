@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Input Form Elements</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <!-- Form elements/tags create an HTML Form -->
+    <!-- Form elements/tags are block elements -->
+    <form>
+        <!-- Input elements are self-closing elements. Also, inputs use the "type" attribute which determines which type of input it will be. -->
+        <!-- Text Input (Most commonly used input) -->
+        <!-- The "name" attribute is used to access what is entered into an input in a form -->
+        <!-- The "placeholder" attribute will display the text in the input until the user starts typing inside the input. -->
+        <input type="text" name="username" placeholder="Username">
+        <br>
+        <!-- Password Input (Hides the user's entry) -->
+        <input type="password" name="password" placeholder="Password">
+        <br>
+        <!-- Submit Input in a form will submit the values in the other inputs that are also in the form -->
+        <!-- The text/content set for the "value" attribute will display in the submit input (NOTE: If the "value" attribute is NOT used, then "Submit" will display in the input.) -->
+        <input type="submit" value="Click Here To Submit">
+    </form>
+
+    <!-- LABELS -->
+    <!-- Labels are used with inputs to notify the user what an is for (NOTE: Screen readers use labels to inform the user of what to enter into an input.) -->
+    <label></label>
+
+    <!-- 1st way to use a label -->
+    <!-- Nesting an input inside of a label will link the two together -->
+    <form>
+        <label>
+            First name
+            <input type="text">
+        </label>
+    </form>
+
+    <!-- 2nd way to use a label -->
+    <!-- The "for" and "id" attributes can be used to link/bind a label to an input -->
+    <form>
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName">
+    </form>
+
+    <!-- Required Attribute -->
+    <!-- The "required" attribute requires the user to enter something in the input before the form can be submitted -->
+    <form>
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" required placeholder="Required">
+        <input type="submit">
+    </form>
+
+    <h1>Other Inputs</h1>
+    <form>
+        <!-- Email Input (User's entry must be in email format when the required attribute is used) -->
+        <label for="userEmail">Email</label>
+        <input type="email" id="userEmail" required>
+
+        <br>
+        <!-- Checkbox Input -->
+        <input type="checkbox" id="agree">
+        <label for="agree">Agree</label>
+
+        <br>
+        <!-- Radio Input -->
+        <!-- Must link radio inputs together using the "name" attribute -->
+        <input type="radio" id="one" name="radioLink">
+        <label for="one">Option 1</label>
+        <br>
+        <input type="radio" id="two" name="radioLink">
+        <label for="two">Option 2</label>
+
+        <br>
+        <!-- Number Input -->
+        <!-- The "value" attribute is used to set a starting number/value -->
+        <label for="age">Age</label>
+        <input type="number" id="age" value="28">
+
+        <br>
+        <!-- Date Input -->
+        <!-- The "value" attribute is used to set a starting date (NOTE" Must be in yyyy-mm-dd format) -->
+        <label for="birthday">Birthday</label>
+        <input type="date" id="birthday" value="1994-01-19">
+
+        <br>
+        <!-- Color Input -->
+        <label for="favColor">Favorite Color</label>
+        <input type="color" id="favColor" value="#ffffff">
+
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>

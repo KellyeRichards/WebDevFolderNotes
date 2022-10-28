@@ -1,0 +1,73 @@
+
+Git: Git is a Version Control Software. Version Control allows the user to save several different versions of a project/file as the project/file grows. This allows the author to show the progression of the project/file and tell a "story" as to how it grows. This also helps with organization as a project gets larger and larger and for testing of different project features. 
+
+Local Repository - Versions of your project that are on your local machine (i.e. your physical computer) 
+
+Remote Repository - Versions of your project that are hosted on the Internet or network somewhere (in this case GitHub)
+
+---------------------------------------------------------
+
+To be run initially, after being run once this will not need to be run again unless you switch to a new computer: 
+
+1. git config --global user.name "Your Name" (sub your actual name you used to sign up with Github, full name, not your username)
+2. git config --global user.email "your@email.com" (sub your email you used to sign up with GitHub)
+
+---------------------------------------------------------
+
+Basic Git Commands: 
+NOTE: These are also on the Git Cheat Sheet in Google Classroom
+
+
+git init
+	a. Creates a new git repository. All tracking is stored in a hidden file called ".git" that is created when `git init` is run
+	b. This command should be run inside the "top" project folder. *Everything* underneath(or within) that folder will be tracked.
+	c. It is not recommended that you run this command on any High Level folders, such as the User, Desktop, or WebDevelopment folders.
+
+git status
+	a. Shows which files are being tracked. Also, shows if we have any files that are ready to be committed (git status can be run at any time)
+
+
+git add fileName
+	a. Adds changes in a specific file to the staging area (Staging area is basically the are we put changes we want to commit)
+	b. Use this command if you want to isolate changes to a specific file.
+
+git add .
+	a. Adds changes in ALL files in the project folder that git init has been run in.
+	b. This is the "add" command that will be used most of the time in this class.
+
+git commit -m "message here"
+	a. Saves changes to the git repository (This creates a save point) and allows us to write a message describing the changes that were made.
+	b. The "-m" is what is referred to as a "flag" when talking about Terminal commands. This changes the behavior of the parent command (in this case git commit).
+	c. Best practice is to write short, detailed commit messages.
+
+git log
+	a. Allows us to see the commits that have been made up to that point
+	b. To escape this screen press q
+
+git push
+	a. Can be used to push any new commits/changes up to the GitHub repository
+
+rm -rf .git
+	a. This is not a git specific command
+	b. Can be used to delete/remove a git repository in a folder/directory. 
+	c. This does not remove any work you have done directly on the file(s) or effect the file(s) locally.
+	d. WARNING: Be careful using this as it disconnects the folder from GitHub entirely and removes any Git tracking locally including ALL commits you have written.
+
+
+---------------------------------------------------------
+
+To push up a folder/file to GitHub for the FIRST time for each new project...
+
+1. git init
+2. git add 
+3. git commit -m ""
+4. If you haven't already, create a new repository on GitHub
+5. Copy and paste "the 3 lines" from GitHub into terminal. Make sure these are from the HTTPS section. We DO NOT want SSH key for this class. 
+6. If successful, refresh GitHub (command + r while in Google Chrome)
+
+
+To push up a folder/file to GitHub for each time after the initial commit...
+
+1. git add
+2. git commit -m ""
+3. git push

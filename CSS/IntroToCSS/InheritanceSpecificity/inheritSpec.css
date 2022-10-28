@@ -1,0 +1,44 @@
+/* INHERITANCE */
+/* Certain CSS properties/styles can be inherited by elements nested inside the element that receives the style */
+/* In the example below all elements inside the body element inherit the text color style. Also, only the body element receives the border style */
+body {
+    /* Color is an example of a style/property that can be inherited */
+    color: coral;
+    /* Border is an example of a style/property that is NOT inherited */
+    border: 10px solid purple;
+}
+
+/* SPECIFICITY */
+/* In CSS when there are conflicting styles being applied to the same element, a set of rules to determine specificity is used (AKA a set of rules to determine which style is applied) */
+/* The div selector is more specific to the P elements than the body element because the div is inside the body element. Therefore the blue color is applied to the P elements in this example */
+div {
+    color: blue;
+}
+
+/* The h2 element selector is more specific to the h2 element (selecting it directly) than the style inherited from the body element */
+h2 {
+    color: gold;
+}
+
+/* Class Selector */
+/* Class selector is more specific than an element selector */
+.precious {
+    color: silver;
+}
+
+/* ID Selector */
+/* ID Selector is more specific than a class selector */
+#ring {
+    color: #cf1020;
+}
+
+/* An element will only inherit a style if it does NOT have one directly set to it. */
+/* NOTE: The rules of specificity are only needed when multiple styles are directly applied to the same element. So in this example even though the aqua color is being applied using an ID selector, the babiest blue known to mankind (aka #a1e9ff) is applied directly to the P element. So specificity is NOT needed here because the #lotr selector is NOT directly selecting the P element. */
+
+#lotr {
+    color: aqua;
+}
+
+p {
+    color: #a1e9ff;
+}

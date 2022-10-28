@@ -1,0 +1,132 @@
+/* STAR SELECTOR */
+/* Sets the style for every element in the HTML file */
+/* The * selector can also select all elements inside another element */
+* {
+    border-left: 3px solid pink;
+}
+
+/* body {
+    border-left: 3px solid pink;
+} */
+
+/* MULTIPLE SELECTORS */
+/* Sets the style for multiple selectors at once */
+/* NOTE: This is helpful to condense your amount of lines in a CSS file */
+h1, h3 {
+    background-color: limegreen;
+}
+
+/* Same as above */
+/* h1 {
+    background-color: limegreen;
+}
+
+h3 {
+    background-color: limegreen;
+} */
+
+/* ATTRIBUTE SELECTOR */
+/* Set the style for elements that have a certain attribute value */
+/* Ex: element[attribute="value"] */
+a[href="https://www.rottentomatoes.com/top-tv"] {
+    border-top: 4px solid rgb(255, 253, 55);
+}
+
+/* DESCENDANT SELECTOR */
+/* Sets the style for the selector (last specified selector) nested in another selector (First specified selector(s)). Even if they are nested more than one level. */
+div h2 {
+    color: purple;
+}
+
+/* section h2 {
+    color: blanchedalmond;
+} */
+
+ol ul li {
+    border-right: 5px dotted blue;
+}
+
+/* CHILD SELECTOR */
+/* Styles all elements (Last selector specified) that are direct children (NOT Grandchildren) of a specified selector (First specified selector(s)) */
+/* So in this case only the h2 nested directly in the div is styled */
+div > h2 {
+    color: blue;
+}
+
+/* SPECIFIC ELEMENT WITH A CLASS */
+/* Sets the style for a specific element that has a class */
+/* Class must be applied to more than one element for this to be useful */
+li.yellow {
+    background-color: yellow;
+}
+
+/* GENERAL SIBLING SELECTOR */
+/* Sets the style for all following elements (ol in this case) that are siblings of the specific element (h3 in this case) */
+h3 ~ ol {
+    border-bottom: 6px solid green;
+}
+
+/* ADJACENT SIBLING SELECTOR */
+/* Same as the General Sibling Selector. However, it will only affect the element (ol in this case) immediately following the specified element (h3 in this case) */
+h3 + ol {
+    border-bottom: 6px solid black;
+}
+
+/* NTH OF TYPE */
+/* Styles every element that is specified nth child (number provided) of a specified type (Selector provided) of its parent (NOT included in the written selector) regardless of the type of the parent element. */
+/* Ex: selector:nth-of-type(number) */
+/* So in this case every 3rd li is styled including "Apple TV" because it is the 3rd li in the ordered list in the "Other" section */
+li:nth-of-type(3) {
+    border-bottom: 4px solid red;
+}
+
+/* Nth of type can also be used to apply a style to multiple elements by using odd, even, or a number followed by an "n" which will style all elements that are a multiple of that number (Ex: 3n) */
+li:nth-of-type(even) {
+    border-bottom: 4px solid magenta;
+}
+
+/* NTH-CHILD */
+/* Styles all elements (element provided) that are the nth child (number provided) of the parent element (NOT included in the written selector) regardless of the type of the parent element. */
+/* Ex: selector:nth-child(number) */
+/* So in this case the "Apple TV+" li is NOT styled because it is the third element in a group of child/sibling elements */
+/* NOTE: Even, odd, and using n (ex: 3n) can also be used with nth-child */
+li:nth-child(3) {
+    background-color: grey;
+}
+
+/* In this case the background color will be applied to any li element that is first element in a group of child/sibling elements */
+
+/* li:first-child {
+    background-color: cornflowerblue;
+} */
+
+/* In this case the background color will be applied to any lie element that is the last element in a group of child/sibling elements */
+/* li:last-child {
+    background-color: rgb(190, 133, 26);
+} */
+
+/* PSEUDO CLASSES */
+/* When the element is hovered over with the cursor/arrow the style is applied. Also, the style is removed when the cursor/arrow is no longer hovering over that element. */
+h2:hover {
+    background-color: rgb(80, 173, 181);
+}
+
+
+/* When the input is clicked (AKA focused into) the style will be applied. Also, the style is removed when another part of the page is clicked (AKA Focused into) */
+input:focus {
+    background-color: silver;
+    color: gold;
+}
+
+/* PSEUDO ELEMENTS */
+h1::first-letter {
+    color: red;
+}
+
+/* NOT SELECTOR */
+/* Does NOT apply the style to a certain element or elements in a group of selected elements */
+/* Ex: selector:not(selector) */
+/* In this example the style is applied to all h3 elements except for the h3 with the "yellow" id */
+h3:not(#yellow) {
+    border-top: 10px solid green;
+}

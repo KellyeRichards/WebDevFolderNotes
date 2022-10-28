@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>DOM Basics</title>
+  </head>
+  <body>
+    <h1>Chicago</h1>
+    <img
+      id="mainPhoto"
+      src="DOMImages/chicagoSkylineDay.jpg"
+      alt="Chicago Skyline"
+    />
+    <p>
+      <strong>Chicago</strong>, or as it is more formally known
+      <strong>City of Chicago</strong>, is the third most populated city in the
+      <a href="https://en.wikipedia.org/wiki/United_States_of_America"
+        >United States of America</a
+      >.
+    </p>
+
+    <!-- #directory>h2 -->
+    <div id="directory">
+      <h2>Contents</h2>
+      <ul>
+        <li>
+          <a href="#history">
+            <span class="directory-number">1</span>
+            <span class="directory-text">History</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="directory-number">2</span>
+            <span class="directory-text">Culture</span>
+          </a>
+          <ul>
+            <li>
+              <a href="#">
+                <span class="directory-number">2.1</span>
+                <span class="directory-text">Tourism</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="directory-number">2.2</span>
+                <span class="directory-text">Cuisine</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+            <a href="#">
+                <span class="directory-number">3</span>
+                <span class="directory-text">Sports</span>
+            </a>
+        </li>
+      </ul>
+    </div>
+    <h2>
+    <!-- span.section-heading#history -->
+    <span class="section-heading" id="history">History</span>
+    </h2>
+    <p>In the mid-18th century, the area was inhabited by the <a href="https://www.potawatomi.org/">Potawatomi</a>, a Native American tribe.</p>
+    <img class="pic" src="DOMImages/searsTower.jpg" alt="The Willis Tower">
+    <img class="pic" src="DOMImages/wrigleyField.jpg" alt="Wrigley Field">
+    <img class="pic" src="DOMImages/navyPier.jpg" alt="Navy Pier">
+
+
+    <script src="domSelectors.js"></script>
+  </body>
+</html>
